@@ -1,0 +1,5 @@
+Osric System Revision Log
+
+Date	     Rev	  Description						Author
+01/23/17     0    Added revision log    Rick Nygaard
+
