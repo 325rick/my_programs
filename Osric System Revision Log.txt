@@ -1,5 +1,7 @@
 Osric System Revision Log
 
 Date	     Rev	  Description						Author
-01/23/17     0    Added revision log    Rick Nygaard
+01/23/17     0            Added revision log                                    Rick Nygaard
+02/01/17     1            Decided on Look and Feel for Project                  Group
+02/01/17     2            Created TODO list on Google Docs                      Rick
 
