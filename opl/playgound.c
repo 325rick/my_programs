@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_DEPRECATE
+#pragma warning(disable: 4244)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,7 +41,7 @@ int main(int argc, char *argv[])
     /*int count = 0;*/
     int lineNum = 0;
     int colNum = 0;
-    char ch;
+    int ch = 0;
     //int sentinel = 1;
     //char *token = "PPDIR";
     //char *message = "#define";
@@ -78,8 +79,8 @@ int main(int argc, char *argv[])
             lineNum++;
             colNum = 1;
         }
-        //printf("%c %2d", ch, colNum);
-        lex(ch);
+        printf("%c %2d", ch, colNum);
+        //lex(ch);
     }
     fclose(datainput);
 
@@ -125,25 +126,25 @@ int main(int argc, char *argv[])
 
 }
 
-void lex(char ch)
-{
-    char *token="";
-    switch (ch)
-    {
-    case '#':
-        strcpy(token, "PPDIR");
-        break;
-    case '/':
-        strcpy(token, "IDENT");
-        break;
-
-    default:
-        break;
-    }
-    printf("%s", token);
-}
-
-void alpha(char ch)
-{
-    printf("%c", ch);
-}
+//void lex(char ch)
+//{
+//    char *token="";
+//    switch (ch)
+//    {
+//    case '#':
+//        strcpy(token, "PPDIR");
+//        break;
+//    case '/':
+//        strcpy(token, "IDENT");
+//        break;
+//
+//    default:
+//        break;
+//    }
+//    printf("%s", token);
+//}
+//
+//void alpha(char ch)
+//{
+//    printf("%c", ch);
+//}
